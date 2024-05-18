@@ -1,11 +1,15 @@
 const playElement = document.querySelector('button');
 
 playElement.addEventListener('click', function(){
+    resetGame()
     const gridElement = document.getElementById('grid');
-    
+    gridElement.classList.add('border');
+
     for(let i = 0; i < 100; i++){
-        const squareElement = document.createElement('article');
+        let squareElement = document.createElement('article');
         squareElement.classList.add('square');
+        squareElement.classList.add('border');
+        squareElement.classList.add('centered');
         squareElement.append(i +1);
 
         squareElement.addEventListener('click', function(){
@@ -14,7 +18,14 @@ playElement.addEventListener('click', function(){
         });
 
         gridElement.appendChild(squareElement);
-        
     }
-
+    
 })
+
+
+// RESET
+function resetGame(){
+    const reset = document.getElementById('grid');
+    reset.innerHTML = ''
+    return reset
+}

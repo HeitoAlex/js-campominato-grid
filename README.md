@@ -10,8 +10,10 @@ con difficoltà 3 => 49 caselle, con un numero compreso tra 1 e 49, divise in 7 
 
 creo una variabile con cui richiamo il bottone 
 realizzo un event listener che al click sul bottone crei una variabile che richiami la section
+assegno una classe alla section 
 all'interno della section creo un ciclo for che generi 100 quadrati uguali 
-assegno una classe ai quadrati
+assegno le classi per stilizzare i quadrati
 appendo a questi quadrati l'index del ciclo for per far apparire il numero al rispettivo quadrato
-creo un altro event listener che al click sul quadrato aggiunga una nuova classe al quadrato così da capire che è stato cliccato
+creo un altro event listener che al click sul quadrato aggiunga la classe active necessaria ai quadrati così da capire che è stato cliccato
 appendo infine tutti i quadrati alla section
+creo una funzione di reset che inserisco nell'event listener al click del bottone prima della variabile che richiami la section #grid

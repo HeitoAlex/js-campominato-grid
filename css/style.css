@@ -35,17 +35,22 @@ section#grid{
     height: 800px;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
     margin: 0 auto;
 }
 
-article.square{
-    width: calc((100% / 10) - 2px);
-    height: calc((100% / 10) - 2px);
-
+.border{
+    border: 1px solid black;
 }
 
+article.square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
 
+.active{
+    background-color: #6393E8;
+    color: white;
+}
 
 footer{
     height: 50px;
